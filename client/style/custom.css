@@ -1,0 +1,39 @@
+#user-menu {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#trending-games {
+  display: flex;
+  flex-direction: row;
+}
+
+#menu {
+  padding-top: 2%;
+}
+
+.img
+{
+  width: 50%;
+  margin: auto;
+}
+
+.game-card {
+  width: calc(20% - 20px);
+  display: inline-block;
+  margin: 0 10px 20px;
+  position: relative;
+  border-radius: 8px;
+  vertical-align: top;
+}
+
+.fas {
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+}
+
+.icon {
+  color: rgb(14, 14, 14);
+  font-size: 1em;
+
+}

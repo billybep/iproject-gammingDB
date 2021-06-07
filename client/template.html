@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style/custom.css">
+  <title>gammingDB</title>
+</head>
+<body>
+
+  <!--? Navbar -->
+  <nav class="navbar navbar-dark bg-dark" style="height: 5rem;">
+    <div class="container-fluid">
+      <div class="col-4">
+        <a class="navbar-brand">gammingDB</a>
+      </div>
+      <div class="col-4">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      </div>
+      <div class="col-4">
+        <div id="user-menu" class="container">
+          <div class="item pt-1 dropstart">
+            <i class="fas fa-user-circle" id="dropdownMenuLink" data-bs-toggle="dropdown"></i>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li>
+                <div>
+                  
+                  <a class="dropdown-item" href="#"><i class="fas fa-user-circle icon"></i> Profile</a>
+                </div>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"><i class="fas fa-heart icon"></i> Wishlist</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"><i class="fas fa-sign-in-alt icon"></i> SignOut</a>
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <button class="btn btn-outline-light item" type="submit">SIGNIN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--? Menu -->
+  <section>
+    <div id="menu" class="container" style="background-color: rgb(241, 241, 241);">
+      <div class="row" style="height: 5rem;">
+        <div class="col-6">
+          <div class="row">
+            <div id="dropdown" class="dropdown">
+              <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width: 10rem;">
+                Genre
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Adventure</a></li>
+                <li><a class="dropdown-item" href="#">FPS</a></li>
+              </ul>
+
+              <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width: 10rem;">
+                Platform
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Playstation</a></li>
+                <li><a class="dropdown-item" href="#">Xbox</a></li>
+                <li><a class="dropdown-item" href="#">Steam</a></li>
+                <li><a class="dropdown-item" href="#">Uplay</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container col-6">
+          <div id="trending-games" class="item">
+            <a href="#" class="mt-2">Trending Games</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--? Carousel -->
+  <section>
+    <div class="container" >
+      <div class="col-8 offset-2" style="background-color: black;">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/gods_and_monsters_video_game_2020-wallpaper-1920x1080.jpg" class="d-block w-100" alt="..." style="width:auto">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/halo_infinite_video_game_2020-wallpaper-1920x1080.jpg" class="d-block w-100" alt="..." style="width:auto">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/remnant_from_the_ashes_game-wallpaper-1920x1080.jpg" class="d-block w-100" alt="..." style="width:auto">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--? Content -->
+  <section>
+    <div class="container-fluid mt-4">
+      <div class="col d-flex flex-row flex-wrap justify-content-center">
+        <div class="card bg-dark text-white game-card">
+          <img src="./assets/remnant_from_the_ashes_game-wallpaper-1920x1080.jpg" class="card-img" alt="...">
+          <!-- <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div> -->
+          <div>
+            <h6 style="text-align: center;">Game Title</h4>
+          </div>
+        </div>
+        <div class="card bg-dark text-white game-card">
+          <img src="./assets/halo_infinite_video_game_2020-wallpaper-1920x1080.jpg" class="card-img" alt="...">
+          <!-- <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div> -->
+          <div>
+            <h6 style="text-align: center;">Game Title</h4>
+          </div>
+        </div>
+        <div class="card bg-dark text-white game-card">
+          <img src="./assets/gods_and_monsters_video_game_2020-wallpaper-1920x1080.jpg" class="card-img" alt="...">
+          <!-- <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div> -->
+          <div>
+            <h6 style="text-align: center;">Game Title</h4>
+          </div>
+        </div>
+        <div class="card bg-dark text-white game-card">
+          <img src="./assets/remnant_from_the_ashes_game-wallpaper-1920x1080.jpg" class="card-img" alt="...">
+          <!-- <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div> -->
+          <div>
+            <h6 style="text-align: center;">Game Title</h4>
+          </div>
+        </div>
+        <div class="card bg-dark text-white game-card">
+          <img src="./assets/halo_infinite_video_game_2020-wallpaper-1920x1080.jpg" class="card-img" alt="...">
+          <!-- <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div> -->
+          <div>
+            <h6 style="text-align: center;">Game Title</h4>
+          </div>
+        </div>
+        <div class="card bg-dark text-white game-card">
+          <img src="./assets/gods_and_monsters_video_game_2020-wallpaper-1920x1080.jpg" class="card-img" alt="...">
+          <!-- <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div> -->
+          <div>
+            <h6 style="text-align: center;">Game Title</h4>
+          </div>
+        </div><div class="card bg-dark text-white game-card">
+          <img src="./assets/remnant_from_the_ashes_game-wallpaper-1920x1080.jpg" class="card-img" alt="...">
+          <!-- <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div> -->
+          <div>
+            <h6 style="text-align: center;">Game Title</h4>
+          </div>
+        </div>
+        <div class="card bg-dark text-white game-card">
+          <img src="./assets/halo_infinite_video_game_2020-wallpaper-1920x1080.jpg" class="card-img" alt="...">
+          <!-- <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div> -->
+          <div>
+            <h6 style="text-align: center;">Game Title</h4>
+          </div>
+        </div>
+        <div class="card bg-dark text-white game-card">
+          <img src="./assets/gods_and_monsters_video_game_2020-wallpaper-1920x1080.jpg" class="card-img" alt="...">
+          <!-- <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div> -->
+          <div>
+            <h6 style="text-align: center;">Game Title</h4>
+          </div>
+        </div><div class="card bg-dark text-white game-card">
+          <img src="./assets/remnant_from_the_ashes_game-wallpaper-1920x1080.jpg" class="card-img" alt="...">
+          <!-- <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div> -->
+          <div>
+            <h6 style="text-align: center;">Game Title</h4>
+          </div>
+        </div>
+        <div class="card bg-dark text-white game-card">
+          <img src="./assets/halo_infinite_video_game_2020-wallpaper-1920x1080.jpg" class="card-img" alt="...">
+          <!-- <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div> -->
+          <div>
+            <h6 style="text-align: center;">Game Title</h4>
+          </div>
+        </div>
+        <div class="card bg-dark text-white game-card">
+          <img src="./assets/gods_and_monsters_video_game_2020-wallpaper-1920x1080.jpg" class="card-img" alt="...">
+          <!-- <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div> -->
+          <div>
+            <h6 style="text-align: center;">Game Title</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--? Sign In / Sign Up -->
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
