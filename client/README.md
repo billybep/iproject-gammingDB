@@ -22,3 +22,5 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+`http://gammingdb.s3-website-us-east-1.amazonaws.com`

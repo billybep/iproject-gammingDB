@@ -15,3 +15,9 @@ data: "fields age_ratings,aggregated_rating,aggregated_rating_count,alternative_
   rating_count
   release_dates
 ```
+
+{
+    "access_token": "9d40iv9z8e3se4vvm9d5840xh6erew",
+    "expires_in": 5650971,
+    "token_type": "bearer"
+}
